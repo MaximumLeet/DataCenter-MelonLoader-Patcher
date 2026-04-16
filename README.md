@@ -16,7 +16,7 @@ Your original file is never deleted, the backup is always there if you need to r
 
 ## How To Use
 
-1. Download `patcher.ps1`
+1. Download `DCMelonPatcher.ps1`
 2. Right-click it → **Run with PowerShell**
 3. Launch the game as normal
 
