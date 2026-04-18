@@ -2,6 +2,14 @@
 
 Fixes MelonLoader compatibility after the Unity 6000.3 → 6000.4 update broke mod loading in Data Center.
 
+## Known Issue
+
+When MelonLoader runs it will check to see if assembly generation is needed, if it does, it will look like this:
+``` [13:16:32.706] [Il2CppAssemblyGenerator] Checking GameAssembly... ```
+``` [13:16:33.116] [Il2CppAssemblyGenerator] Assembly Generation Needed! ```
+
+In the event assemblies are generated, you will need to either run the patcher again or replace the newly generated assembly (UnityEngine.CoreModule.dll) with the patched version found in this repo.
+
 ## The Problem
 
 The Unity 6000.4 update shipped a changed `UnityEngine.CoreModule.dll` that MelonLoader cannot load against. All mods stop working after this patch.
